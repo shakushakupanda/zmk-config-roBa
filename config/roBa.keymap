@@ -92,17 +92,17 @@
             bindings = <
 &kp ESC     &trans       &kp UP    &kp LC(F)  &kp LC(Z)                             &trans         &trans    &mkp MCLK  &trans    &trans
 &kp TAB     &kp LEFT     &trans    &kp RIGHT  &kp LC(C)  &trans          &trans     &trans         &mkp MB1  &mkp MB3   &mkp MB2  &kp LA(GRAVE)
-&kp LSHIFT  &kp LS(SQT)  &kp DOWN  &kp LC(G)  &kp LC(V)  &trans          &trans     &trans         &trans    &trans     &trans    &trans
+&kp LSHIFT  &kp LS(SQT)  &kp DOWN  &kp LC(G)  &kp LC(V)  &trans          &trans     &trans         &trans    &trans     &trans    &kp RC(SPACE)
 &trans      &trans       &trans    &trans     &trans     &out OUT_TOG    &kp ENTER  &kp BACKSPACE                                 &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp F1          &kp F2                  &kp UP_ARROW    &kp LC(TAB)              &trans                             &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp C           &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &out OUT_TOG    &trans         &trans         &trans         &trans         &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans          &trans                                                      &trans
+&kp F1          &kp F2                  &kp UP_ARROW    &kp LC(TAB)              &trans                             &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &bt BT_CLR_ALL  &bt BT_DISC 0  &mkp MB1      &bt BT_DISC 2  &mkp MB2      &bt BT_DISC 4
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp C           &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &out OUT_TOG    &trans         &trans        &trans         &trans        &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans    &trans          &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
