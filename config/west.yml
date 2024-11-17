@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
+    - name: shakushakupanda
+      url-base: https://github.com/shakushakupanda
     - name: caksoylar  # <-- new entry
       url-base: https://github.com/caksoylar
   projects:
@@ -12,7 +14,7 @@ manifest:
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: kumamuk-git
+      remote: shakushakupanda
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
